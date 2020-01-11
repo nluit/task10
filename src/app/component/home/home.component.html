@@ -1,0 +1,11 @@
+<div class="card text-white ">
+    <div class="card-header bg-success">
+        THIS IS HOME PAGE
+    </div>
+    <div class="card-body">
+        <button class="btn btn-success" (click)="show = !show">{{show ? 'hide' : 'show'}}</button> show = {{show}}
+        <br>
+        <div *ngIf="show; else elseBlock">Text to show</div>
+        <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+    </div>
+</div>

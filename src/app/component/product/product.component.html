@@ -1,0 +1,27 @@
+<div class="card-header">
+    <h2 class="text-center">Products</h2>
+</div>
+<table class="table table-hover">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Desc</th>
+            <th scope="col">View</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products index as i">
+            <th scope="row">{{product.product_id}}</th>
+            <td>{{product.product_name |uppercase}}</td>
+            <td>{{product.product_price | currency}}</td>
+            <td>{{product.desc}}</td>
+            <td> <a routerLink="/product/{{product.product_id}}" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></a> </td>
+
+        </tr>
+
+
+    </tbody>
+</table>

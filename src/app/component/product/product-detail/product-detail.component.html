@@ -1,0 +1,27 @@
+<div class="row my-3">
+    <div class="col-md-4">
+        <img [src]="result.img" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-7">
+        <div class="card my-5">
+            <h4 class="card-title">Product detail</h4>
+
+            <div class="card-body">
+                <div class="form-group mx-2">
+                    <label for="">ID: {{result.product_id}}</label>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="">Name: {{result.product_name |uppercase}}</label>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="">Price: {{result.product_price | currency}}</label>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="">Desc: {{result.desc}} </label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

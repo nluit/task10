@@ -1,0 +1,28 @@
+<div class="card-header">
+    <h2 class="text-center">Users</h2>
+</div>
+<table class="table table-hover">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone</th>
+            <th scope="col">View</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users index as i">
+            <th scope="row">{{user.id}}</th>
+
+            <th scope="row">{{user.name}}</th>
+            <td>{{user.email}}</td>
+            <td>{{user.address.street }}, {{user.address.city }} </td>
+            <td>{{user.name}}</td>
+            <td> <a routerLink="/contact/{{ user.id }}" (click)=btn(user.id) class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></a> </td>
+        </tr>
+
+
+    </tbody>
+</table>
