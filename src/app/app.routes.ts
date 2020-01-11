@@ -66,5 +66,9 @@ export const appRoutes : Routes = [
       path : 'login',
       component : LoginComponent
     },
+    {
+      path : 'sign-up',
+      component : RegisterComponent
+    },
     
 ]
