@@ -11,7 +11,7 @@
         ],
         "rewrites": [{
             "source": "**",
-            "destination": "./Task10/index.html"
+            "destination": "/index.html"
         }]
     }
 }
